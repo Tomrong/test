@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { media } from 'styled-bootstrap-grid'
 
 const Main = styled.div`
 position:relative;
@@ -18,10 +19,18 @@ input[type=checkbox] {
 .left{
     position: absolute;
     left: 0;
+  
 }
 .right{
     position: absolute;
     right: 0;
+    ${media.xs`
+        right: 10;
+    `}
+}
+.fix-position{
+    float:left;
+    margin-left:10px;
 }
 `
 
